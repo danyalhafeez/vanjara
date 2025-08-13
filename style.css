@@ -1,0 +1,27 @@
+header {
+  background-color: rgba(234, 240, 246, 0.95);
+  padding: 0.5rem 2rem;
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.hero {
+  background: linear-gradient(rgba(74, 124, 169, 0.5), rgba(74, 124, 169, 0.5)), 
+              url('https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+  text-align: center;
+  padding: 5rem 2rem;
+  color: white;
+}
+
+.hero-logo {
+  height: 120px;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  background-color: white; /* Remove this line if your logo has transparency */
+  padding: 8px;
+}
