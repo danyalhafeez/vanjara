@@ -5,134 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vanjara</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    * {
-      scroll-behavior: smooth;
-    }
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background-color: #f8f9fa;
-      color: #333;
-    }
-    header {
-  background-color: rgba(234, 240, 246, 0.95);
-  padding: 0.5rem 2rem;
-  display: flex;
-  justify-content: flex-end;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-
-    header img {
-      height: 50px;
-    }
-    nav a {
-      color: #4a7ca9;
-      margin-left: 1rem;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    .hero {
-  background: linear-gradient(rgba(74, 124, 169, 0.5), rgba(74, 124, 169, 0.5)), 
-              url('https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
-  text-align: center;
-  padding: 5rem 2rem;
-  color: white;
-}
-    .hero-logo {
-  height: 120px;
-  margin-bottom: 1rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-  background-color: white; /* Remove this line if your logo has transparency */
-  padding: 8px;
-}
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-      animation: fadeInUp 1s ease-in-out;
-    }
-    .hero p {
-      font-size: 1.2rem;
-      max-width: 600px;
-      margin: auto;
-      animation: fadeInUp 1.5s ease-in-out;
-    }
-    .section {
-      padding: 3rem 2rem;
-      max-width: 900px;
-      margin: auto;
-    }
-    .section h2 {
-      color: #4a7ca9;
-      margin-bottom: 1rem;
-      text-align: center;
-    }
-    .contact-info, form {
-      margin-top: 1rem;
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-    }
-    form input, form textarea {
-      padding: 0.8rem;
-      margin: 0.5rem 0;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-family: inherit;
-    }
-    form button {
-      background-color: #4a7ca9;
-      color: white;
-      padding: 0.8rem;
-      border: none;
-      border-radius: 5px;
-      font-size: 1rem;
-      cursor: pointer;
-    }
-    form button:hover {
-      background-color: #3a6486;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #eaf0f6;
-      color: #4a7ca9;
-      font-size: 0.9rem;
-    }
-    @media (max-width: 600px) {
-      .hero h1 {
-        font-size: 2rem;
-      }
-    }
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+  <header>
+    <img src="vanjara-logo.png" alt="Vanjara Logo" />
+    <nav>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-<section class="hero">
-  <img src="vanjara-logo.png" alt="Vanjara Logo" class="hero-logo" />
-  <h1>Welcome to Vanjara</h1>
-  <p>Your trusted source for quality products — crafted with care, delivered with passion.</p>
-</section>
-
+  <section class="hero">
+    <h1>Welcome to Vanjara</h1>
+    <p>Your trusted source for quality products — crafted with care, delivered with passion.</p>
+  </section>
 
   <section class="section" id="about">
     <h2>About Us</h2>
@@ -160,11 +48,8 @@
   </section>
 
   <footer>
-    &copy; 2025 Vanjara. All rights reserved.
+    &copy; 2025 Vanjara LLC. All rights reserved.
   </footer>
 
 </body>
 </html>
-
-
-
