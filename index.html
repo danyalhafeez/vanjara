@@ -1,57 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vanjara</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanjara</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <img src="vanjara-logo.png" alt="Vanjara Logo" />
-    <nav>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+    <!-- Hero Banner -->
+    <section class="hero">
+        <img src="vanjara-logo.png" alt="Vanjara Logo" class="hero-logo">
+        <h1>Welcome to Vanjara</h1>
+        <p>Explore quality products crafted with care—just for you!</p>
+        <a href="#products" class="btn">Shop Now</a>
+    </section>
 
-  <section class="hero">
-    <h1>Welcome to Vanjara</h1>
-    <p>Your trusted source for quality products — crafted with care, delivered with passion.</p>
-  </section>
+    <!-- Top Categories -->
+    <section class="categories">
+        <h2>Top Categories</h2>
+        <div class="cat-list">
+            <div class="cat-item">Apparel</div>
+            <div class="cat-item">Home Decor</div>
+            <div class="cat-item">Accessories</div>
+        </div>
+    </section>
 
-  <section class="section" id="about">
-    <h2>About Us</h2>
-    <p>
-      Vanjara is a new e-commerce venture committed to delivering top-notch products at unbeatable value. 
-      We believe in quality, trust, and customer satisfaction above all else.
-    </p>
-    <p>
-      This is placeholder text — you can replace it later with your brand story, mission, or details about your products and services.
-    </p>
-  </section>
+    <!-- New Products Grid -->
+    <section class="products" id="products">
+        <h2>New Arrivals</h2>
+        <div class="product-grid">
+            <!-- Product Cards -->
+            <div class="card">
+                <img src="https://via.placeholder.com/200x200?text=Product+1" alt="Product 1" class="product-image">
+                <h3>Sample Product 1</h3>
+                <p class="price">$25.00</p>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/200x200?text=Product+2" alt="Product 2" class="product-image">
+                <h3>Sample Product 2</h3>
+                <p class="price">$35.00</p>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/200x200?text=Product+3" alt="Product 3" class="product-image">
+                <h3>Sample Product 3</h3>
+                <p class="price">$45.00</p>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/200x200?text=Product+4" alt="Product 4" class="product-image">
+                <h3>Sample Product 4</h3>
+                <p class="price">$55.00</p>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
 
-  <section class="section" id="contact">
-    <h2>Contact Us</h2>
-    <div class="contact-info">
-      <p>Email: info@vanjara.com</p>
-      <p>Phone: +123 456 7890</p>
-    </div>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" rows="4" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
+    <!-- Trust Signals -->
+    <section class="trust">
+        <div class="trust-item">🚚 Free Shipping</div>
+        <div class="trust-item">📞 24/7 Support</div>
+        <div class="trust-item">💰 Money-Back Guarantee</div>
+    </section>
 
-  <footer>
-    &copy; 2025 Vanjara LLC. All rights reserved.
-  </footer>
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <h2>What Customers Say</h2>
+        <blockquote>
+            “Excellent quality and fast delivery!” — <strong>Alice</strong>
+        </blockquote>
+        <blockquote>
+            “Great support and lovely products.” — <strong>Raj</strong>
+        </blockquote>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 Vanjara | Contact: info@vanjara.com</p>
+    </footer>
 
 </body>
 </html>
-
-
