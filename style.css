@@ -1,102 +1,132 @@
-* {
-  scroll-behavior: smooth;
-}
+/* General Reset */
 body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background-color: #f8f9fa;
-  color: #333;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8faff;
+    color: #333;
 }
-header {
-  background-color: rgba(234, 240, 246, 0.95);
-  padding: 1rem 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-header img {
-  height: 50px;
-}
-nav a {
-  color: #4a7ca9;
-  margin-left: 1rem;
-  text-decoration: none;
-  font-weight: 600;
-}
-nav a:hover {
-  text-decoration: underline;
-}
+
+/* Hero Section */
 .hero {
-  background: linear-gradient(rgba(74, 124, 169, 0.5), rgba(74, 124, 169, 0.5)), 
-              url('https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
-  text-align: center;
-  padding: 6rem 2rem;
-  color: white;
+    background-color: #eaf0f6;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+.hero-logo {
+    width: 150px;
+    height: auto;
 }
 .hero h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  animation: fadeInUp 1s ease-in-out;
+    font-size: 2.5rem;
+    margin: 1rem 0;
 }
 .hero p {
-  font-size: 1.2rem;
-  max-width: 600px;
-  margin: auto;
-  animation: fadeInUp 1.5s ease-in-out;
+    font-size: 1.2rem;
 }
-.section {
-  padding: 3rem 2rem;
-  max-width: 900px;
-  margin: auto;
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: #4a7ca9;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
 }
-.section h2 {
-  color: #4a7ca9;
-  margin-bottom: 1rem;
-  text-align: center;
+.btn:hover {
+    background-color: #3a6486;
 }
-.contact-info, form {
-  margin-top: 1rem;
+
+/* Categories */
+.categories {
+    text-align: center;
+    padding: 3rem 2rem;
 }
-form {
-  display: flex;
-  flex-direction: column;
+.categories h2 {
+    margin-bottom: 1.5rem;
 }
-form input, form textarea {
-  padding: 0.8rem;
-  margin: 0.5rem 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-family: inherit;
+.cat-list {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
-form button {
-  background-color: #4a7ca9;
-  color: white;
-  padding: 0.8rem;
-  border: none;
-  border-radius: 5px;
-  font-size: 1rem;
-  cursor: pointer;
+.cat-item {
+    background-color: #eaf0f6;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-weight: bold;
 }
-form button:hover {
-  background-color: #3a6486;
+
+/* Products */
+.products {
+    padding: 3rem 2rem;
 }
-footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: #eaf0f6;
-  color: #4a7ca9;
-  font-size: 0.9rem;
+.products h2 {
+    text-align: center;
+    margin-bottom: 2rem;
 }
-@media (max-width: 600px) {
-  .hero h1 {
-    font-size: 2rem;
-  }
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 2rem;
 }
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+.card {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.product-image {
+    max-width: 100%;
+    border-radius: 5px;
+}
+.price {
+    color: #4a7ca9;
+    font-weight: bold;
+}
+.add-cart {
+    background-color: #4a7ca9;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.add-cart:hover {
+    background-color: #3a6486;
+}
+
+/* Trust Section */
+.trust {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.trust-item {
+    background-color: #eaf0f6;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+}
+
+/* Testimonials */
+.testimonials {
+    padding: 3rem 2rem;
+    background-color: #f0f5fa;
+    text-align: center;
+}
+.testimonials blockquote {
+    font-style: italic;
+    margin: 1rem auto;
+    max-width: 600px;
+}
+
+/* Footer */
+.footer {
+    background-color: #4a7ca9;
+    color: white;
+    text-align: center;
+    padding: 1rem;
 }
