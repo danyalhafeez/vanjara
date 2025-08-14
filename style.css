@@ -374,9 +374,8 @@ html {
 }
 
 .hero-logo {
-    width: 220px;
+    width: 280px;
     height: auto;
-    filter: brightness(0) invert(1);
     transition: transform 0.3s ease;
 }
 
