@@ -242,6 +242,21 @@
                     <p>📞 +1 (555) 123-4567</p>
                     <p>📍 123 Commerce Street, City</p>
                 </div>
+                <div class="footer-section">
+                    <h4>Get in Touch</h4>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2025 Vanjara | All rights reserved</p>
@@ -258,6 +273,25 @@
             } else {
                 navbar.classList.remove('scrolled');
             }
+        // Contact form submission
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const button = this.querySelector('button');
+            const inputs = this.querySelectorAll('input, textarea');
+            
+            // Visual feedback
+            button.textContent = 'Sending...';
+            button.style.background = '#10b981';
+            
+            setTimeout(() => {
+                button.textContent = 'Message Sent!';
+                inputs.forEach(input => input.value = '');
+                
+                setTimeout(() => {
+                    button.textContent = 'Send Message';
+                    button.style.background = '#4a7ca9';
+                }, 3000);
+            }, 1500);
         });
 
         // Cart functionality
@@ -313,4 +347,3 @@
     </script>
 </body>
 </html>
-
