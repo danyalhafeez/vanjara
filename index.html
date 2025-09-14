@@ -11,37 +11,40 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <div class="logo">Vanjara</div>
-            <nav>
-                <ul class="nav-menu">
-                    <li class="nav-item"><a href="#" class="active">Home</a></li>
-                    <li class="nav-item"><a href="#products">Products</a></li>
-                    <li class="nav-item"><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+            <a href="#" class="nav-logo">Vanjara</a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#categories" class="nav-link">Categories</a></li>
+                <li><a href="#products" class="nav-link">Products</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
             <div class="nav-actions">
                 <div class="search-container">
                     <input type="text" class="search-input" placeholder="Search products...">
                 </div>
-                <button class="cart-btn">
-                    Cart
+                <div class="nav-cart">
+                    <span class="cart-icon">🛒</span>
                     <span class="cart-count">0</span>
-                </button>
+                </div>
             </div>
             <button class="mobile-menu-btn">☰</button>
         </div>
-    </header>
+    </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" id="home">
         <div class="hero-content">
-            <h1>Premium Lifestyle Collection</h1>
-            <p>Discover curated products that elevate your everyday life with quality, style, and innovation.</p>
-            <button class="cta-button" onclick="scrollToProducts()">Shop Now</button>
+            <div class="hero-logo-container">
+                <img src="vanjara-logo.png" alt="Vanjara Logo" class="hero-logo">
+            </div>
+            <h1 class="hero-title">Premium Lifestyle Collection</h1>
+            <p class="hero-subtitle">Discover curated products that elevate your everyday life with quality, style, and innovation.</p>
+            <a href="#products" class="btn btn-primary">Shop Now</a>
         </div>
+        <div class="hero-background"></div>
     </section>
 
     <!-- Category Navigation -->
@@ -120,66 +123,6 @@
                             <button class="add-to-cart" onclick="addToCart('Anti-Aging Eye Cream', 52.00)">Add to Cart</button>
                         </div>
                     </div>
-                    <div class="product-card">
-                        <div class="product-image">🎨</div>
-                        <div class="product-info">
-                            <h3 class="product-title">Professional Makeup Palette</h3>
-                            <div class="product-price">$39.99</div>
-                            <div class="product-rating">
-                                <span class="stars">★★★★☆</span>
-                                <span>(4.4)</span>
-                            </div>
-                            <button class="add-to-cart" onclick="addToCart('Professional Makeup Palette', 39.99)">Add to Cart</button>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-image">🧴</div>
-                        <div class="product-info">
-                            <h3 class="product-title">Vitamin C Serum</h3>
-                            <div class="product-price">$24.99</div>
-                            <div class="product-rating">
-                                <span class="stars">★★★★★</span>
-                                <span>(4.8)</span>
-                            </div>
-                            <button class="add-to-cart" onclick="addToCart('Vitamin C Serum', 24.99)">Add to Cart</button>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-image">🪒</div>
-                        <div class="product-info">
-                            <h3 class="product-title">Premium Shaving Kit</h3>
-                            <div class="product-price">$65.00</div>
-                            <div class="product-rating">
-                                <span class="stars">★★★★☆</span>
-                                <span>(4.3)</span>
-                            </div>
-                            <button class="add-to-cart" onclick="addToCart('Premium Shaving Kit', 65.00)">Add to Cart</button>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-image">🧴</div>
-                        <div class="product-info">
-                            <h3 class="product-title">Hydrating Body Lotion</h3>
-                            <div class="product-price">$18.50</div>
-                            <div class="product-rating">
-                                <span class="stars">★★★★☆</span>
-                                <span>(4.5)</span>
-                            </div>
-                            <button class="add-to-cart" onclick="addToCart('Hydrating Body Lotion', 18.50)">Add to Cart</button>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-image">🌟</div>
-                        <div class="product-info">
-                            <h3 class="product-title">Glowing Face Mask Set</h3>
-                            <div class="product-price">$34.99</div>
-                            <div class="product-rating">
-                                <span class="stars">★★★★★</span>
-                                <span>(4.9)</span>
-                            </div>
-                            <button class="add-to-cart" onclick="addToCart('Glowing Face Mask Set', 34.99)">Add to Cart</button>
-                        </div>
-                    </div>
                 </div>
             </div>
 
@@ -247,66 +190,6 @@
                             <button class="add-to-cart" onclick="addToCart('Luxury Scented Candles', 28.00)">Add to Cart</button>
                         </div>
                     </div>
-                    <div class="product-card">
-                        <div class="product-image">🪴</div>
-                        <div class="product-info">
-                            <h3 class="product-title">Modern Plant Pots Set</h3>
-                            <div class="product-price">$39.99</div>
-                            <div class="product-rating">
-                                <span class="stars">★★★★☆</span>
-                                <span>(4.5)</span>
-                            </div>
-                            <button class="add-to-cart" onclick="addToCart('Modern Plant Pots Set', 39.99)">Add to Cart</button>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-image">🍽️</div>
-                        <div class="product-info">
-                            <h3 class="product-title">Elegant Dinner Plate Set</h3>
-                            <div class="product-price">$67.50</div>
-                            <div class="product-rating">
-                                <span class="stars">★★★★★</span>
-                                <span>(4.8)</span>
-                            </div>
-                            <button class="add-to-cart" onclick="addToCart('Elegant Dinner Plate Set', 67.50)">Add to Cart</button>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-image">🧽</div>
-                        <div class="product-info">
-                            <h3 class="product-title">Eco-Friendly Cleaning Kit</h3>
-                            <div class="product-price">$24.99</div>
-                            <div class="product-rating">
-                                <span class="stars">★★★★☆</span>
-                                <span>(4.3)</span>
-                            </div>
-                            <button class="add-to-cart" onclick="addToCart('Eco-Friendly Cleaning Kit', 24.99)">Add to Cart</button>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-image">🏠</div>
-                        <div class="product-info">
-                            <h3 class="product-title">Smart Home Organizer</h3>
-                            <div class="product-price">$55.00</div>
-                            <div class="product-rating">
-                                <span class="stars">★★★★☆</span>
-                                <span>(4.6)</span>
-                            </div>
-                            <button class="add-to-cart" onclick="addToCart('Smart Home Organizer', 55.00)">Add to Cart</button>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-image">🌡️</div>
-                        <div class="product-info">
-                            <h3 class="product-title">Digital Kitchen Scale</h3>
-                            <div class="product-price">$29.99</div>
-                            <div class="product-rating">
-                                <span class="stars">★★★★★</span>
-                                <span>(4.7)</span>
-                            </div>
-                            <button class="add-to-cart" onclick="addToCart('Digital Kitchen Scale', 29.99)">Add to Cart</button>
-                        </div>
-                    </div>
                 </div>
             </div>
 
@@ -351,18 +234,6 @@
                         </div>
                     </div>
                     <div class="product-card">
-                        <div class="product-image">👗</div>
-                        <div class="product-info">
-                            <h3 class="product-title">Elegant Summer Dress</h3>
-                            <div class="product-price">$65.99</div>
-                            <div class="product-rating">
-                                <span class="stars">★★★★☆</span>
-                                <span>(4.6)</span>
-                            </div>
-                            <button class="add-to-cart" onclick="addToCart('Elegant Summer Dress', 65.99)">Add to Cart</button>
-                        </div>
-                    </div>
-                    <div class="product-card">
                         <div class="product-image">⌚</div>
                         <div class="product-info">
                             <h3 class="product-title">Luxury Watch</h3>
@@ -372,54 +243,6 @@
                                 <span>(4.8)</span>
                             </div>
                             <button class="add-to-cart" onclick="addToCart('Luxury Watch', 189.99)">Add to Cart</button>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-image">🧥</div>
-                        <div class="product-info">
-                            <h3 class="product-title">Leather Jacket</h3>
-                            <div class="product-price">$125.00</div>
-                            <div class="product-rating">
-                                <span class="stars">★★★★☆</span>
-                                <span>(4.4)</span>
-                            </div>
-                            <button class="add-to-cart" onclick="addToCart('Leather Jacket', 125.00)">Add to Cart</button>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-image">📿</div>
-                        <div class="product-info">
-                            <h3 class="product-title">Pearl Necklace</h3>
-                            <div class="product-price">$89.50</div>
-                            <div class="product-rating">
-                                <span class="stars">★★★★★</span>
-                                <span>(4.7)</span>
-                            </div>
-                            <button class="add-to-cart" onclick="addToCart('Pearl Necklace', 89.50)">Add to Cart</button>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-image">👠</div>
-                        <div class="product-info">
-                            <h3 class="product-title">High Heel Shoes</h3>
-                            <div class="product-price">$69.99</div>
-                            <div class="product-rating">
-                                <span class="stars">★★★★☆</span>
-                                <span>(4.3)</span>
-                            </div>
-                            <button class="add-to-cart" onclick="addToCart('High Heel Shoes', 69.99)">Add to Cart</button>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-image">🎒</div>
-                        <div class="product-info">
-                            <h3 class="product-title">Designer Backpack</h3>
-                            <div class="product-price">$55.00</div>
-                            <div class="product-rating">
-                                <span class="stars">★★★★☆</span>
-                                <span>(4.5)</span>
-                            </div>
-                            <button class="add-to-cart" onclick="addToCart('Designer Backpack', 55.00)">Add to Cart</button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -439,30 +262,99 @@
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section class="features">
+    <!-- Trust Signals / Features -->
+    <section class="trust">
         <div class="container">
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">🚚</div>
-                    <h3 class="feature-title">Free Shipping</h3>
-                    <p class="feature-description">On orders over $50</p>
+            <div class="trust-grid">
+                <div class="trust-item">
+                    <div class="trust-icon">🚚</div>
+                    <h4>Free Shipping</h4>
+                    <p>On orders over $50</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📞</div>
-                    <h3 class="feature-title">24/7 Support</h3>
-                    <p class="feature-description">Always here to help</p>
+                <div class="trust-item">
+                    <div class="trust-icon">📞</div>
+                    <h4>24/7 Support</h4>
+                    <p>Always here to help</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">💰</div>
-                    <h3 class="feature-title">Money-Back Guarantee</h3>
-                    <p class="feature-description">30-day return policy</p>
+                <div class="trust-item">
+                    <div class="trust-icon">💰</div>
+                    <h4>Money-Back Guarantee</h4>
+                    <p>30-day return policy</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🏆</div>
-                    <h3 class="feature-title">Premium Quality</h3>
-                    <p class="feature-description">Only the best products</p>
+                <div class="trust-item">
+                    <div class="trust-icon">🏆</div>
+                    <h4>Premium Quality</h4>
+                    <p>Only the best products</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <blockquote class="testimonial-text">
+                        "Excellent quality and fast delivery! The customer service exceeded my expectations."
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">A</div>
+                        <div class="author-info">
+                            <strong class="author-name">Alice Johnson</strong>
+                            <span class="author-title">Verified Customer</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <blockquote class="testimonial-text">
+                        "Great support and lovely products. Will definitely shop here again!"
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">R</div>
+                        <div class="author-info">
+                            <strong class="author-name">Raj Patel</strong>
+                            <span class="author-title">Verified Customer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter & Contact Section -->
+    <section class="newsletter-contact-section">
+        <div class="newsletter-contact-container">
+            <!-- Newsletter Section -->
+            <div class="newsletter-section">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to get exclusive deals and new product updates</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+            
+            <!-- Contact Section -->
+            <div class="contact-section">
+                <h2>Get in Touch</h2>
+                <p>Have a question? Send us a message and we'll get back to you</p>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
             </div>
         </div>
     </section>
@@ -472,7 +364,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Vanjara</h3>
+                    <h4>Vanjara</h4>
                     <p>Quality products crafted with care for you and your loved ones.</p>
                     <div class="social-links">
                         <a href="#">📘</a>
@@ -482,7 +374,7 @@
                     </div>
                 </div>
                 <div class="footer-section">
-                    <h3>Quick Links</h3>
+                    <h4>Quick Links</h4>
                     <ul>
                         <li><a href="#home">Home</a></li>
                         <li><a href="#categories">Categories</a></li>
@@ -491,7 +383,7 @@
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h3>Customer Service</h3>
+                    <h4>Customer Service</h4>
                     <ul>
                         <li><a href="#">Help Center</a></li>
                         <li><a href="#">Shipping Info</a></li>
@@ -500,9 +392,9 @@
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h3>Contact Info</h3>
+                    <h4>Contact Info</h4>
                     <p>📧 sales.vanjarallc@usa.com</p>
-                    <p>📞 +1 7278331468</p>
+                    <p>📞 +1 (727) (833) (1468)</p>
                     <p>📍 123 Commerce Street, City</p>
                 </div>
             </div>
@@ -515,6 +407,16 @@
     <script>
         let cartCount = 0;
         const cartCountElement = document.querySelector('.cart-count');
+
+        // Navigation scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
 
         // Category switching functionality
         function showCategory(category) {
@@ -547,25 +449,43 @@
                 button.style.background = '';
             }, 2000);
             
-            console.log(`Added ${productName} (${price}) to cart`);
+            console.log(`Added ${productName} ($${price}) to cart`);
         }
 
-        // Scroll to products function
-        function scrollToProducts() {
-            document.getElementById('products').scrollIntoView({
-                behavior: 'smooth'
-            });
-        }
+        // Contact form submission
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const button = this.querySelector('button');
+            const inputs = this.querySelectorAll('input, textarea');
+            
+            // Visual feedback
+            button.textContent = 'Sending...';
+            button.style.background = '#10b981';
+            
+            setTimeout(() => {
+                button.textContent = 'Message Sent!';
+                inputs.forEach(input => input.value = '');
+                
+                setTimeout(() => {
+                    button.textContent = 'Send Message';
+                    button.style.background = '#667eea';
+                }, 3000);
+            }, 1500);
+        });
 
-        // Navigation scroll effect
-        window.addEventListener('scroll', function() {
-            const header = document.querySelector('.header');
-            if (window.scrollY > 100) {
-                header.style.background = 'rgba(255, 255, 255, 0.98)';
-                header.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.1)';
-            } else {
-                header.style.background = 'rgba(255, 255, 255, 0.95)';
-                header.style.boxShadow = 'none';
+        // Newsletter form
+        document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const input = this.querySelector('input');
+            const button = this.querySelector('button');
+            
+            if (input.value.trim()) {
+                button.textContent = 'Subscribed!';
+                input.value = '';
+                
+                setTimeout(() => {
+                    button.textContent = 'Subscribe';
+                }, 3000);
             }
         });
 
@@ -585,4 +505,3 @@
     </script>
 </body>
 </html>
-                
