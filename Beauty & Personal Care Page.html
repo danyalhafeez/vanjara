@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty & Personal Care - Vanjara</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iNCIgZmlsbD0iIzdjM2FlZCIvPgo8cGF0aCBkPSJNOCA4TDE2IDIwTDI0IDhIMjJMMTYgMTZMMTAgOEg4WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Vanjara</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="#" class="nav-link">Categories</a></li>
+                <li><a href="#products" class="nav-link">Products</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Search products...">
+                </div>
+                <div class="nav-cart">
+                    <span class="cart-icon">🛒</span>
+                    <span class="cart-count">0</span>
+                </div>
+            </div>
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </nav>
+
+    <!-- Category Header -->
+    <section class="category-header">
+        <div class="container">
+            <h1 class="category-title">Beauty & Personal Care</h1>
+            <p class="category-subtitle">Discover premium skincare, makeup, and personal care products</p>
+        </div>
+    </section>
+
+    <!-- Category Navigation -->
+    <section class="category-nav">
+        <div class="category-container">
+            <a href="beauty.html" class="category-btn active">Beauty & Personal Care</a>
+            <a href="home.html" class="category-btn">Home & Kitchen</a>
+            <a href="clothing.html" class="category-btn">Clothing & Jewelry</a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section" id="products">
+        <div class="container">
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-image">💄</div>
+                    <div class="product-info">
+                        <h3 class="product-title">Premium Face Moisturizer</h3>
+                        <div class="product-price">$45.99</div>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span>(4.8)</span>
+                        </div>
+                        <p class="product-description">Hydrating daily moisturizer with hyaluronic acid</p>
+                        <button class="add-to-cart" onclick="addToCart('Premium Face Moisturizer', 45.99)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image">🧴</div>
+                    <div class="product-info">
+                        <h3 class="product-title">Vitamin C Serum</h3>
+                        <div class="product-price">$32.99</div>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span>(4.9)</span>
+                        </div>
+                        <p class="product-description">Brightening serum with 20% vitamin C</p>
+                        <button class="add-to-cart" onclick="addToCart('Vitamin C Serum', 32.99)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image">💋</div>
+                    <div class="product-info">
+                        <h3 class="product-title">Matte Lipstick Collection</h3>
+                        <div class="product-price">$28.99</div>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span>(4.7)</span>
+                        </div>
+                        <p class="product-description">Set of 6 long-lasting matte lipsticks</p>
+                        <button class="add-to-cart" onclick="addToCart('Matte Lipstick Collection', 28.99)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-image">🧼</div>
+                    <div class="product-info">
+                        <h3 class="product-title">Organic Face Cleanser</h3>
+                        <div class="product-price">$19.99</div>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span>(4.6)</span>
+                        </div>
+                        <p class="product-description">Gentle daily cleanser with natural ingredients</p>
+                        <button class="add-to-cart" onclick="addToCart('Organic Face Cleanser', 19.99)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <div class="product-image">✨</div>
+                    <div class="product-info">
+                        <h3 class="product-title">Retinol Night Cream</h3>
+                        <div class="product-price">$58.00</div>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span>(4.8)</span>
+                        </div>
+                        <p class="product-description">Anti-aging night cream with retinol complex</p>
+                        <button class="add-to-cart" onclick="addToCart('Retinol Night Cream', 58.00)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <div class="product-image">🎨</div>
+                    <div class="product-info">
+                        <h3 class="product-title">Professional Makeup Palette</h3>
+                        <div class="product-price">$39.99</div>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span>(4.4)</span>
+                        </div>
+                        <p class="product-description">Complete eyeshadow palette with 20 shades</p>
+                        <button class="add-to-cart" onclick="addToCart('Professional Makeup Palette', 39.99)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="product-card">
+                    <div class="product-image">🧴</div>
+                    <div class="product-info">
+                        <h3 class="product-title">Hair Growth Serum</h3>
+                        <div class="product-price">$42.50</div>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span>(4.5)</span>
+                        </div>
+                        <p class="product-description">Intensive hair growth treatment serum</p>
+                        <button class="add-to-cart" onclick="addToCart('Hair Growth Serum', 42.50)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="product-card">
+                    <div class="product-image">🪒</div>
+                    <div class="product-info">
+                        <h3 class="product-title">Premium Shaving Kit</h3>
+                        <div class="product-price">$65.00</div>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span>(4.3)</span>
+                        </div>
+                        <p class="product-description">Complete shaving set with razor and cream</p>
+                        <button class="add-to-cart" onclick="addToCart('Premium Shaving Kit', 65.00)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 9 -->
+                <div class="product-card">
+                    <div class="product-image">🌟</div>
+                    <div class="product-info">
+                        <h3 class="product-title">Glowing Face Mask Set</h3>
+                        <div class="product-price">$34.99</div>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span>(4.9)</span>
+                        </div>
+                        <p class="product-description">5-pack hydrating and brightening face masks</p>
+                        <button class="add-to-cart" onclick="addToCart('Glowing Face Mask Set', 34.99)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 10 -->
+                <div class="product-card">
+                    <div class="product-image">🧴</div>
+                    <div class="product-info">
+                        <h3 class="product-title">Hydrating Body Lotion</h3>
+                        <div class="product-price">$18.50</div>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span>(4.5)</span>
+                        </div>
+                        <p class="product-description">24-hour moisture body lotion with shea butter</p>
+                        <button class="add-to-cart" onclick="addToCart('Hydrating Body Lotion', 18.50)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 11 -->
+                <div class="product-card">
+                    <div class="product-image">🧊</div>
+                    <div class="product-info">
+                        <h3 class="product-title">Cooling Eye Patches</h3>
+                        <div class="product-price">$25.99</div>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span>(4.7)</span>
+                        </div>
+                        <p class="product-description">Under-eye patches for dark circles and puffiness</p>
+                        <button class="add-to-cart" onclick="addToCart('Cooling Eye Patches', 25.99)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 12 -->
+                <div class="product-card">
+                    <div class="product-image">🧴</div>
+                    <div class="product-info">
+                        <h3 class="product-title">Micellar Cleansing Water</h3>
+                        <div class="product-price">$16.99</div>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span>(4.4)</span>
+                        </div>
+                        <p class="product-description">Gentle makeup remover and facial cleanser</p>
+                        <button class="add-to-cart" onclick="addToCart('Micellar Cleansing Water', 16.99)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 13 -->
+                <div class="product-card">
+                    <div class="product-image">💅</div>
+                    <div class="product-info">
+                        <h3 class="product-title">Nail Care Collection</h3>
+                        <div class="product-price">$29.50</div>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span>(4.6)</span>
+                        </div>
+                        <p class="product-description">Complete nail care kit with polishes and tools</p>
+                        <button class="add-to-cart" onclick="addToCart('Nail Care Collection', 29.50)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 14 -->
+                <div class="product-card">
+                    <div class="product-image">🧴</div>
+                    <div class="product-info">
+                        <h3 class="product-title">Argan Hair Oil</h3>
+                        <div class="product-price">$22.99</div>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span>(4.8)</span>
+                        </div>
+                        <p class="product-description">Pure argan oil for hair nourishment and shine</p>
+                        <button class="add-to-cart" onclick="addToCart('Argan Hair Oil', 22.99)">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 15 -->
+                <div class="product-card">
+                    <div class="product-image">🧴</div>
+                    <div class="product-info">
+                        <h3 class="product-title">Dry Shampoo Spray</h3>
+                        <div class="product-price">$14.99</div>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span>(4.3)</span>
+                        </div>
+                        <p class="product-description">Refreshing dry shampoo for all hair types</p>
+                        <button class="add-to-cart" onclick="addToCart('Dry Shampoo Spray', 14.99)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Vanjara</h4>
+                    <p>Quality products crafted with care for you and your loved ones.</p>
+                    <div class="social-links">
+                        <a href="#">📘</a>
+                        <a href="#">📷</a>
+                        <a href="#">🦋</a>
+                        <a href="#">📧</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="beauty.html">Beauty</a></li>
+                        <li><a href="home.html">Home & Kitchen</a></li>
+                        <li><a href="clothing.html">Fashion</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>📧 sales.vanjarallc@usa.com</p>
+                    <p>📞 +1 7278331468</p>
+                    <p>📍 28 W Flagler St, Ste 300B #214<br>Miami, FL 33130</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Vanjara | All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let cartCount = 0;
+        const cartCountElement = document.querySelector('.cart-count');
+
+        // Navigation scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Add to cart functionality
+        function addToCart(productName, price) {
+            cartCount++;
+            cartCountElement.textContent = cartCount;
+            
+            // Show success message
+            const button = event.target;
+            const originalText = button.textContent;
+            button.textContent = '✓ Added!';
+            button.style.background = '#10b981';
+            
+            setTimeout(() => {
+                button.textContent = originalText;
+                button.style.background = '';
+            }, 2000);
+            
+            console.log(`Added ${productName} ($${price}) to cart`);
+        }
+    </script>
+</body>
+</html>
