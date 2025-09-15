@@ -50,18 +50,18 @@
     <!-- Category Navigation -->
     <section class="category-nav">
         <div class="category-container">
-            <button class="category-btn active" onclick="showCategory('beauty')">Beauty & Personal Care</button>
-            <button class="category-btn" onclick="showCategory('home')">Home & Kitchen</button>
-            <button class="category-btn" onclick="showCategory('clothing')">Clothing & Jewelry</button>
+            <a href="beauty.html" class="category-btn">Beauty & Personal Care</a>
+            <a href="home.html" class="category-btn">Home & Kitchen</a>
+            <a href="clothing.html" class="category-btn">Clothing & Jewelry</a>
         </div>
     </section>
 
-    <!-- Products Section -->
+    <!-- Best Selling Products Section -->
     <section class="products-section" id="products">
         <div class="container">
-            <!-- Beauty & Personal Care Category -->
-            <div class="category-section active" id="beauty-section">
-                <h2 class="section-title">Beauty & Personal Care</h2>
+            <!-- Beauty & Personal Care Best Sellers -->
+            <div class="category-section">
+                <h2 class="section-title">Best Selling Beauty Products</h2>
                 <div class="products-grid">
                     <div class="product-card">
                         <div class="product-image">💄</div>
@@ -72,31 +72,34 @@
                                 <span class="stars">★★★★★</span>
                                 <span>(4.8)</span>
                             </div>
+                            <span class="bestseller-badge">Best Seller</span>
                             <button class="add-to-cart" onclick="addToCart('Premium Face Moisturizer', 45.99)">Add to Cart</button>
                         </div>
                     </div>
                     <div class="product-card">
                         <div class="product-image">🧴</div>
                         <div class="product-info">
-                            <h3 class="product-title">Hair Growth Serum</h3>
-                            <div class="product-price">$32.50</div>
+                            <h3 class="product-title">Vitamin C Serum</h3>
+                            <div class="product-price">$32.99</div>
                             <div class="product-rating">
-                                <span class="stars">★★★★☆</span>
-                                <span>(4.5)</span>
+                                <span class="stars">★★★★★</span>
+                                <span>(4.9)</span>
                             </div>
-                            <button class="add-to-cart" onclick="addToCart('Hair Growth Serum', 32.50)">Add to Cart</button>
+                            <span class="bestseller-badge">Best Seller</span>
+                            <button class="add-to-cart" onclick="addToCart('Vitamin C Serum', 32.99)">Add to Cart</button>
                         </div>
                     </div>
                     <div class="product-card">
                         <div class="product-image">💋</div>
                         <div class="product-info">
-                            <h3 class="product-title">Luxury Lipstick Set</h3>
+                            <h3 class="product-title">Matte Lipstick Collection</h3>
                             <div class="product-price">$28.99</div>
                             <div class="product-rating">
                                 <span class="stars">★★★★★</span>
-                                <span>(4.9)</span>
+                                <span>(4.7)</span>
                             </div>
-                            <button class="add-to-cart" onclick="addToCart('Luxury Lipstick Set', 28.99)">Add to Cart</button>
+                            <span class="bestseller-badge">Best Seller</span>
+                            <button class="add-to-cart" onclick="addToCart('Matte Lipstick Collection', 28.99)">Add to Cart</button>
                         </div>
                     </div>
                     <div class="product-card">
@@ -108,27 +111,32 @@
                                 <span class="stars">★★★★☆</span>
                                 <span>(4.6)</span>
                             </div>
+                            <span class="bestseller-badge">Best Seller</span>
                             <button class="add-to-cart" onclick="addToCart('Organic Face Cleanser', 19.99)">Add to Cart</button>
                         </div>
                     </div>
                     <div class="product-card">
                         <div class="product-image">✨</div>
                         <div class="product-info">
-                            <h3 class="product-title">Anti-Aging Eye Cream</h3>
-                            <div class="product-price">$52.00</div>
+                            <h3 class="product-title">Retinol Night Cream</h3>
+                            <div class="product-price">$58.00</div>
                             <div class="product-rating">
                                 <span class="stars">★★★★★</span>
-                                <span>(4.7)</span>
+                                <span>(4.8)</span>
                             </div>
-                            <button class="add-to-cart" onclick="addToCart('Anti-Aging Eye Cream', 52.00)">Add to Cart</button>
+                            <span class="bestseller-badge">Best Seller</span>
+                            <button class="add-to-cart" onclick="addToCart('Retinol Night Cream', 58.00)">Add to Cart</button>
                         </div>
                     </div>
                 </div>
+                <div class="view-more">
+                    <a href="beauty.html" class="btn btn-primary">View All Beauty Products</a>
+                </div>
             </div>
 
-            <!-- Home & Kitchen Category -->
-            <div class="category-section" id="home-section">
-                <h2 class="section-title">Home & Kitchen</h2>
+            <!-- Home & Kitchen Best Sellers -->
+            <div class="category-section">
+                <h2 class="section-title">Best Selling Home Products</h2>
                 <div class="products-grid">
                     <div class="product-card">
                         <div class="product-image">🍳</div>
@@ -139,124 +147,140 @@
                                 <span class="stars">★★★★★</span>
                                 <span>(4.8)</span>
                             </div>
+                            <span class="bestseller-badge">Best Seller</span>
                             <button class="add-to-cart" onclick="addToCart('Non-Stick Cookware Set', 129.99)">Add to Cart</button>
                         </div>
                     </div>
                     <div class="product-card">
                         <div class="product-image">☕</div>
                         <div class="product-info">
-                            <h3 class="product-title">Premium Coffee Maker</h3>
+                            <h3 class="product-title">Smart Coffee Maker</h3>
                             <div class="product-price">$89.99</div>
                             <div class="product-rating">
                                 <span class="stars">★★★★☆</span>
                                 <span>(4.6)</span>
                             </div>
-                            <button class="add-to-cart" onclick="addToCart('Premium Coffee Maker', 89.99)">Add to Cart</button>
+                            <span class="bestseller-badge">Best Seller</span>
+                            <button class="add-to-cart" onclick="addToCart('Smart Coffee Maker', 89.99)">Add to Cart</button>
                         </div>
                     </div>
                     <div class="product-card">
                         <div class="product-image">🥄</div>
                         <div class="product-info">
-                            <h3 class="product-title">Stainless Steel Cutlery Set</h3>
-                            <div class="product-price">$45.50</div>
+                            <h3 class="product-title">Premium Knife Set</h3>
+                            <div class="product-price">$75.50</div>
                             <div class="product-rating">
                                 <span class="stars">★★★★★</span>
-                                <span>(4.7)</span>
+                                <span>(4.9)</span>
                             </div>
-                            <button class="add-to-cart" onclick="addToCart('Stainless Steel Cutlery Set', 45.50)">Add to Cart</button>
+                            <span class="bestseller-badge">Best Seller</span>
+                            <button class="add-to-cart" onclick="addToCart('Premium Knife Set', 75.50)">Add to Cart</button>
                         </div>
                     </div>
                     <div class="product-card">
                         <div class="product-image">🏺</div>
                         <div class="product-info">
-                            <h3 class="product-title">Ceramic Storage Jars</h3>
-                            <div class="product-price">$32.99</div>
+                            <h3 class="product-title">Glass Storage Container Set</h3>
+                            <div class="product-price">$42.99</div>
                             <div class="product-rating">
                                 <span class="stars">★★★★☆</span>
                                 <span>(4.4)</span>
                             </div>
-                            <button class="add-to-cart" onclick="addToCart('Ceramic Storage Jars', 32.99)">Add to Cart</button>
+                            <span class="bestseller-badge">Best Seller</span>
+                            <button class="add-to-cart" onclick="addToCart('Glass Storage Container Set', 42.99)">Add to Cart</button>
                         </div>
                     </div>
                     <div class="product-card">
-                        <div class="product-image">🕯️</div>
+                        <div class="product-image">🌡️</div>
                         <div class="product-info">
-                            <h3 class="product-title">Luxury Scented Candles</h3>
-                            <div class="product-price">$28.00</div>
+                            <h3 class="product-title">Digital Air Fryer</h3>
+                            <div class="product-price">$99.00</div>
                             <div class="product-rating">
                                 <span class="stars">★★★★★</span>
-                                <span>(4.9)</span>
+                                <span>(4.7)</span>
                             </div>
-                            <button class="add-to-cart" onclick="addToCart('Luxury Scented Candles', 28.00)">Add to Cart</button>
+                            <span class="bestseller-badge">Best Seller</span>
+                            <button class="add-to-cart" onclick="addToCart('Digital Air Fryer', 99.00)">Add to Cart</button>
                         </div>
                     </div>
                 </div>
+                <div class="view-more">
+                    <a href="home.html" class="btn btn-primary">View All Home Products</a>
+                </div>
             </div>
 
-            <!-- Clothing & Jewelry Category -->
-            <div class="category-section" id="clothing-section">
-                <h2 class="section-title">Clothing & Jewelry</h2>
+            <!-- Clothing & Jewelry Best Sellers -->
+            <div class="category-section">
+                <h2 class="section-title">Best Selling Fashion Items</h2>
                 <div class="products-grid">
                     <div class="product-card">
                         <div class="product-image">👕</div>
                         <div class="product-info">
-                            <h3 class="product-title">Premium Cotton T-Shirt</h3>
+                            <h3 class="product-title">Organic Cotton T-Shirt</h3>
                             <div class="product-price">$24.99</div>
                             <div class="product-rating">
                                 <span class="stars">★★★★★</span>
                                 <span>(4.8)</span>
                             </div>
-                            <button class="add-to-cart" onclick="addToCart('Premium Cotton T-Shirt', 24.99)">Add to Cart</button>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-image">👖</div>
-                        <div class="product-info">
-                            <h3 class="product-title">Designer Jeans</h3>
-                            <div class="product-price">$79.99</div>
-                            <div class="product-rating">
-                                <span class="stars">★★★★☆</span>
-                                <span>(4.5)</span>
-                            </div>
-                            <button class="add-to-cart" onclick="addToCart('Designer Jeans', 79.99)">Add to Cart</button>
+                            <span class="bestseller-badge">Best Seller</span>
+                            <button class="add-to-cart" onclick="addToCart('Organic Cotton T-Shirt', 24.99)">Add to Cart</button>
                         </div>
                     </div>
                     <div class="product-card">
                         <div class="product-image">💍</div>
                         <div class="product-info">
-                            <h3 class="product-title">Sterling Silver Ring</h3>
-                            <div class="product-price">$45.00</div>
+                            <h3 class="product-title">Sterling Silver Ring Set</h3>
+                            <div class="product-price">$65.00</div>
                             <div class="product-rating">
                                 <span class="stars">★★★★★</span>
                                 <span>(4.9)</span>
                             </div>
-                            <button class="add-to-cart" onclick="addToCart('Sterling Silver Ring', 45.00)">Add to Cart</button>
+                            <span class="bestseller-badge">Best Seller</span>
+                            <button class="add-to-cart" onclick="addToCart('Sterling Silver Ring Set', 65.00)">Add to Cart</button>
                         </div>
                     </div>
                     <div class="product-card">
                         <div class="product-image">⌚</div>
                         <div class="product-info">
-                            <h3 class="product-title">Luxury Watch</h3>
-                            <div class="product-price">$189.99</div>
+                            <h3 class="product-title">Classic Leather Watch</h3>
+                            <div class="product-price">$149.99</div>
                             <div class="product-rating">
                                 <span class="stars">★★★★★</span>
                                 <span>(4.8)</span>
                             </div>
-                            <button class="add-to-cart" onclick="addToCart('Luxury Watch', 189.99)">Add to Cart</button>
+                            <span class="bestseller-badge">Best Seller</span>
+                            <button class="add-to-cart" onclick="addToCart('Classic Leather Watch', 149.99)">Add to Cart</button>
                         </div>
                     </div>
                     <div class="product-card">
-                        <div class="product-image">💎</div>
+                        <div class="product-image">👖</div>
                         <div class="product-info">
-                            <h3 class="product-title">Diamond Earrings</h3>
-                            <div class="product-price">$149.99</div>
+                            <h3 class="product-title">Premium Denim Jeans</h3>
+                            <div class="product-price">$79.99</div>
                             <div class="product-rating">
-                                <span class="stars">★★★★★</span>
-                                <span>(4.9)</span>
+                                <span class="stars">★★★★☆</span>
+                                <span>(4.5)</span>
                             </div>
-                            <button class="add-to-cart" onclick="addToCart('Diamond Earrings', 149.99)">Add to Cart</button>
+                            <span class="bestseller-badge">Best Seller</span>
+                            <button class="add-to-cart" onclick="addToCart('Premium Denim Jeans', 79.99)">Add to Cart</button>
                         </div>
                     </div>
+                    <div class="product-card">
+                        <div class="product-image">🎒</div>
+                        <div class="product-info">
+                            <h3 class="product-title">Leather Crossbody Bag</h3>
+                            <div class="product-price">$89.50</div>
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span>(4.7)</span>
+                            </div>
+                            <span class="bestseller-badge">Best Seller</span>
+                            <button class="add-to-cart" onclick="addToCart('Leather Crossbody Bag', 89.50)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="view-more">
+                    <a href="clothing.html" class="btn btn-primary">View All Fashion Items</a>
                 </div>
             </div>
         </div>
@@ -394,8 +418,8 @@
                 <div class="footer-section">
                     <h4>Contact Info</h4>
                     <p>📧 sales.vanjarallc@usa.com</p>
-                    <p>📞 +1 (727) (833) (1468)</p>
-                    <p>📍 38 W Flager St Ste 300B 214 Miami, FL 33130-1702</p>
+                    <p>📞 +1 727-833-1468</p>
+                    <p>📍 38 W Flagler St, Ste 300B 214 Miami, FL 33130-1702</p>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -505,5 +529,3 @@
     </script>
 </body>
 </html>
-
-
