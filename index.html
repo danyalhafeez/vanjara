@@ -57,7 +57,7 @@
     </section>
 
     <!-- Best Sellers Section -->
-    <section class="best-sellers-section">
+    <section class="best-sellers-section" id="products">
         <div class="container">
             <h2 class="section-title">Best Sellers</h2>
             
@@ -443,21 +443,6 @@
                 navbar.classList.remove('scrolled');
             }
         });
-
-        // Category switching functionality
-        function showCategory(category) {
-            // Hide all category sections
-            const sections = document.querySelectorAll('.category-section');
-            sections.forEach(section => section.classList.remove('active'));
-            
-            // Show selected category
-            document.getElementById(category + '-section').classList.add('active');
-            
-            // Update active button
-            const buttons = document.querySelectorAll('.category-btn');
-            buttons.forEach(btn => btn.classList.remove('active'));
-            event.target.classList.add('active');
-        }
 
         // Add to cart functionality
         function addToCart(productName, price) {
