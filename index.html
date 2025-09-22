@@ -14,12 +14,19 @@
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="#" class="nav-logo">Vanjara</a>
+            <a href="index.html" class="nav-logo">Vanjara</a>
             <ul class="nav-menu">
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#categories" class="nav-link">Categories</a></li>
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link">Categories</a>
+                    <div class="dropdown-content">
+                        <a href="beauty.html">Beauty & Personal Care</a>
+                        <a href="home.html">Home & Kitchen</a>
+                        <a href="clothing.html">Clothing & Jewelry</a>
+                    </div>
+                </li>
                 <li><a href="#products" class="nav-link">Products</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
             <div class="nav-actions">
                 <div class="search-container">
@@ -44,7 +51,6 @@
             <p class="hero-subtitle">Discover curated products that elevate your everyday life with quality, style, and innovation.</p>
             <a href="#products" class="btn btn-primary">Shop Now</a>
         </div>
-        <div class="hero-background"></div>
     </section>
 
     <!-- Category Navigation -->
@@ -352,41 +358,22 @@
         </div>
     </section>
 
-    <!-- Newsletter & Contact Section -->
-    <section class="newsletter-contact-section">
-        <div class="newsletter-contact-container">
-            <!-- Newsletter Section -->
-            <div class="newsletter-section">
+    <!-- Newsletter Section -->
+    <section class="newsletter-section-home">
+        <div class="container">
+            <div class="newsletter-content">
                 <h2>Stay Updated</h2>
                 <p>Subscribe to get exclusive deals and new product updates</p>
                 <form class="newsletter-form">
                     <input type="email" placeholder="Enter your email address" required>
-                    <button type="submit" class="btn btn-primary">Subscribe</button>
-                </form>
-            </div>
-            
-            <!-- Contact Section -->
-            <div class="contact-section">
-                <h2>Get in Touch</h2>
-                <p>Have a question? Send us a message and we'll get back to you</p>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea placeholder="Your Message" required></textarea>
-                    </div>
-                    <button type="submit">Send Message</button>
+                    <button type="submit">Subscribe</button>
                 </form>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer" id="contact">
+    <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
@@ -402,10 +389,11 @@
                 <div class="footer-section">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#categories">Categories</a></li>
-                        <li><a href="#products">Products</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="beauty.html">Beauty</a></li>
+                        <li><a href="home.html">Home & Kitchen</a></li>
+                        <li><a href="clothing.html">Fashion</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -420,8 +408,8 @@
                 <div class="footer-section">
                     <h4>Contact Info</h4>
                     <p>📧 sales.vanjarallc@usa.com</p>
-                    <p>📞 +1 727-833-1468</p>
-                    <p>📍 28 W Flagler St, Ste 300B #214 Miami, FL 33130</p>
+                    <p>📞 +1 7278331468</p>
+                    <p>📍 28 W Flagler St, Ste 300B #214<br>Miami, FL 33130</p>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -463,27 +451,6 @@
             console.log(`Added ${productName} ($${price}) to cart`);
         }
 
-        // Contact form submission
-        document.querySelector('.contact-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const button = this.querySelector('button');
-            const inputs = this.querySelectorAll('input, textarea');
-            
-            // Visual feedback
-            button.textContent = 'Sending...';
-            button.style.background = '#10b981';
-            
-            setTimeout(() => {
-                button.textContent = 'Message Sent!';
-                inputs.forEach(input => input.value = '');
-                
-                setTimeout(() => {
-                    button.textContent = 'Send Message';
-                    button.style.background = '#667eea';
-                }, 3000);
-            }, 1500);
-        });
-
         // Newsletter form
         document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
             e.preventDefault();
@@ -516,4 +483,3 @@
     </script>
 </body>
 </html>
-
