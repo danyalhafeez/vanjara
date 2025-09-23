@@ -45,74 +45,250 @@
     <section class="contact-hero">
         <div class="container">
             <h1 class="page-title">Contact Us</h1>
-            <p class="page-subtitle">We'd love to hear from you. Get in touch with our team.</p>
+            <p class="page-subtitle">We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
         </div>
     </section>
 
-    <!-- Contact Information -->
-    <section class="contact-info-section">
+    <!-- Contact Section -->
+    <section class="contact-section">
         <div class="container">
-            <div class="contact-info-grid">
-                <div class="contact-info-card">
-                    <div class="contact-icon">📧</div>
-                    <h3>Email Us</h3>
-                    <p>sales.vanjarallc@usa.com</p>
-                    <p>We'll respond within 24 hours</p>
+            <div class="contact-grid">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>sales.vanjarallc@usa.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+1 7278331468</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h4>Address</h4>
+                            <p>28 W Flagler St, Ste 300B #214<br>Miami, FL 33130</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">🕒</div>
+                        <div class="contact-details">
+                            <h4>Business Hours</h4>
+                            <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM<br>Sunday: Closed</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="contact-info-card">
-                    <div class="contact-icon">📞</div>
-                    <h3>Call Us</h3>
-                    <p>+1 7278331468</p>
-                    <p>Available 24/7 for support</p>
-                </div>
-                <div class="contact-info-card">
-                    <div class="contact-icon">📍</div>
-                    <h3>Visit Us</h3>
-                    <p>28 W Flagler St, Ste 300B #214</p>
-                    <p>Miami, FL 33130</p>
+
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" required placeholder="Tell us how we can help you..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Form Section -->
-    <section class="contact-form-section">
+    <!-- FAQ Section -->
+    <section class="faq-section">
         <div class="container">
-            <div class="contact-content-grid">
-                <!-- Contact Form -->
-                <div class="contact-form-container">
-                    <h2>Get in Touch</h2>
-                    <p>Have a question or need assistance? Send us a message and we'll get back to you as soon as possible.</p>
-                    
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Full Name *</label>
-                            <input type="text" id="name" name="name" required placeholder="Enter your full name">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email">Email Address *</label>
-                            <input type="email" id="email" name="email" required placeholder="Enter your email address">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number (optional)">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="subject">Subject *</label>
-                            <select id="subject" name="subject" required>
-                                <option value="">Select a subject</option>
-                                <option value="general">General Inquiry</option>
-                                <option value="product">Product Question</option>
-                                <option value="order">Order Support</option>
-                                <option value="shipping">Shipping & Returns</option>
-                                <option value="technical">Technical Support</option>
-                                <option value="partnership">Partnership Inquiry</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message">Message *</label>
-                            <textarea id="message" name="message" rows="6
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>How long does shipping take?</h4>
+                    <p>We offer free shipping on orders over $50. Standard shipping takes 3-5 business days, while express shipping takes 1-2 business days.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>What is your return policy?</h4>
+                    <p>We offer a 30-day money-back guarantee. Items must be in original condition with tags attached for a full refund.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>Do you ship internationally?</h4>
+                    <p>Currently, we only ship within the United States. We're working on expanding our shipping options to international customers.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>How can I track my order?</h4>
+                    <p>Once your order ships, you'll receive a tracking number via email. You can use this to track your package on our website or the carrier's site.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section-home">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to get exclusive deals and new product updates</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Vanjara</h4>
+                    <p>Quality products crafted with care for you and your loved ones.</p>
+                    <div class="social-links">
+                        <a href="#" title="Facebook">📘</a>
+                        <a href="#" title="Instagram">📷</a>
+                        <a href="#" title="Twitter">🦋</a>
+                        <a href="#" title="Email">📧</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="beauty.html">Beauty</a></li>
+                        <li><a href="home.html">Home & Kitchen</a></li>
+                        <li><a href="clothing.html">Fashion</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>📧 sales.vanjarallc@usa.com</p>
+                    <p>📞 +1 7278331468</p>
+                    <p>📍 28 W Flagler St, Ste 300B #214<br>Miami, FL 33130</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Vanjara | All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let cartCount = 0;
+        const cartCountElement = document.querySelector('.cart-count');
+
+        // Navigation scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Contact form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const submitBtn = this.querySelector('.submit-btn');
+            const originalText = submitBtn.textContent;
+            
+            // Show loading state
+            submitBtn.textContent = 'Sending...';
+            submitBtn.style.background = '#10b981';
+            
+            // Simulate form submission
+            setTimeout(() => {
+                submitBtn.textContent = 'Message Sent! ✓';
+                
+                // Reset form
+                this.reset();
+                
+                // Reset button after delay
+                setTimeout(() => {
+                    submitBtn.textContent = originalText;
+                    submitBtn.style.background = '';
+                }, 3000);
+            }, 1000);
+        });
+
+        // Newsletter form
+        document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const input = this.querySelector('input');
+            const button = this.querySelector('button');
+            
+            if (input.value.trim()) {
+                button.textContent = 'Subscribed!';
+                input.value = '';
+                
+                setTimeout(() => {
+                    button.textContent = 'Subscribe';
+                }, 3000);
+            }
+        });
+
+        // Mobile menu functionality
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            const navMenu = document.querySelector('.nav-menu');
+            navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
